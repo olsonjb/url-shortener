@@ -1,3 +1,13 @@
+# How to Run
+<!--
+- Include instructions on how to run your implementation locally. Be sure to include any necessary setup steps, such as installing dependencies, as well as the commands to start the application.
+-->
+1. Clone the repository
+2. Run `yarn install` in the project root
+3. Run `yarn build` in the project root
+4. Run `yarn start` in the project root
+5. Visit the URL output in the terminal, which should be [https://localhost:3000]()
+
 # Implementation Details
 <!-- Provide a short description of your implementation (technologies used, brief overview of project architecture, etc.) -->
 The URL shortener is implemented in Next.js (React) and TypeScript. The project was initialized as suggested by the Next.js team using the following command: `npx create-next-app@latest --use-yarn`.
@@ -17,16 +27,6 @@ Creates an endpoint (`/api`) for 2 request types:
 
 ## Routing Middleware
 Handles the redirection of shortened URL's to the corresponding full-length URL. Parses the slug from the end of the url and performs a GET request to the URL shortening API to retrieve the map of slugs-to-urls from server memory. It then redirects the user to the URL corresponding to the slug. If slug provided is not valid, the user is redirected to the home page.
-
-# How to Run
-<!--
-- Include instructions on how to run your implementation locally. Be sure to include any necessary setup steps, such as installing dependencies, as well as the commands to start the application.
--->
-1. Clone the repository
-2. Run `yarn install` in the project root
-3. Run `yarn build` in the project root
-4. Run `yarn start` in the project root
-5. Visit the URL output in the terminal, which should be [https://localhost:3000]()
 
 # Testing
 <!-- Describe how you tested your solution (automated testing, manual testing process, screenshots, etc.) -->
